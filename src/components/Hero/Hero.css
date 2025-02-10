@@ -1,0 +1,82 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.logo-image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform: translate(-55%, -0%);
+  z-index: 0;
+}
+
+.name-container {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 215px;
+  color: white;
+  letter-spacing: -0.06em;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.special-letter {
+  font-family: "Cormorant", serif;
+  font-size: 236px;
+  font-style: italic;
+  font-weight: 100;
+  text-align: center;
+  margin-right: 15px;
+  margin-left: -15px;
+}
+
+.name-container span:not(.special-letter) {
+  font-family: "Raleway", sans-serif;
+  font-size: 215px;
+  font-weight: 600;
+  line-height: 185px;
+  text-align: left;
+}
+
+.description {
+  position: absolute;
+  top: 20vw;
+  left: 45px;
+  max-width: 350px;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: left;
+  color: #e5e4dc;
+}
+
+.cta-button {
+  position: absolute;
+  top: 21vw;
+  right: 40px;
+  background: transparent;
+  border: 1px solid #e5e4dc;
+  color: #e5e4dc;
+  padding: 12px 24px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 23.48px;
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .special-letter {
+    font-size: 120px;
+  }
+  .name-container span:not(.special-letter) {
+    font-size: 120px;
+  }
+} 

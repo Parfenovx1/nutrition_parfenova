@@ -1,25 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap");
+
 .App {
   text-align: center;
+  font-family: "Raleway", sans-serif;
+  min-height: 100vh;
+  position: relative;
 }
 
 .logo-image {
-  margin-right: 300px;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  transform: translate(-55%, -0%);
+  z-index: 0;
 }
 
 .name-container {
   position: absolute;
-  bottom: 30px;
+  bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
-  text-align: left;
   font-size: 215px;
   color: white;
-  letter-spacing: -0.06em; 
+  letter-spacing: -0.06em;
   white-space: nowrap;
+  z-index: 10;
 }
 
 .special-letter {
-  font-family: 'Cormorant', serif;
+  font-family: "Cormorant", serif;
   font-size: 236px;
   font-style: italic;
   font-weight: 100;
@@ -29,7 +38,7 @@
 }
 
 .name-container span:not(.special-letter) {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 215px;
   font-weight: 600;
   line-height: 185px;
@@ -43,4 +52,112 @@
   .name-container span:not(.special-letter) {
     font-size: 120px;
   }
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 40px;
+  z-index: 10;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.logo-letters {
+  font-size: 24px;
+  font-family: "Cormorant", serif;
+}
+
+.logo-text {
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 200px;
+  align-items: flex-start;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.nav-menu a {
+  color: #e5e4dc;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 23.48px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.language-switcher {
+  display: flex;
+  gap: 8px;
+}
+
+.language-switcher span {
+  color: #e5e4dc;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 23.48px;
+}
+
+.language-switcher span.active {
+  text-decoration: underline;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.description {
+  position: absolute;
+  top: 20vw;
+  left: 45px;
+  max-width: 350px;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: left;
+  color: #e5e4dc;
+}
+
+.cta-button {
+  position: absolute;
+  top: 21vw;
+  right: 40px;
+  background: transparent;
+  border: 1px solid #e5e4dc;
+  color: #e5e4dc;
+  padding: 12px 24px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 23.48px;
+  z-index: 10;
+}
+
+.page-block {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
 }

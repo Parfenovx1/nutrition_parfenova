@@ -1,14 +1,14 @@
 import './App.css';
-import imgSrc from './assets/IMG.svg';
+import Header from './components/Header/Header';
+import Hero from './components/Hero/Hero';
+import Results from './components/Results/Results';
 
 function App() {
   return (
     <div className="App">
-      <div className="name-container">
-        <span className="special-letter">Ю</span>ЛІЯ ПАРФЕН
-        <span className="special-letter">О</span>ВА
-      </div>
-      <img alt="svg" className="logo-image" src={imgSrc} />
+      <Header />
+      <Hero />
+      <Results />
     </div>
   );
 }
