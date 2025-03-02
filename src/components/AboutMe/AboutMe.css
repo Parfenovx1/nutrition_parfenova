@@ -23,6 +23,7 @@
   line-height: 46.96px;
   text-align: left;
   margin-bottom: 24px;
+  text-transform: uppercase;
 }
 
 .about-me-title .certified {
@@ -31,6 +32,7 @@
   font-style: italic;
   font-weight: 500;
   line-height: 54.5px;
+  margin-left: 100px;
 }
 
 .association-text {

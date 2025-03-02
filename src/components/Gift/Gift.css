@@ -1,0 +1,131 @@
+.gift {
+  min-height: 50vh;
+  background-image: url("../../assets/GiftBG.svg");
+  background-size: cover;
+  background-position: bottom;
+  padding: 120px 0;
+  position: relative;
+}
+
+.gift-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gift-content {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.gift-label {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Cormorant", serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 32px;
+  color: #fff;
+  text-align: center;
+}
+
+.gift-title {
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.gift-title-main {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  color: #fff;
+  text-align: left;
+}
+
+.gift-title-accent {
+  display: block;
+  font-family: "Cormorant", sans-serif;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 48px;
+  color: #fff;
+  text-align: left;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.gift-description {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 40px;
+  max-width: 500px;
+  color: #fff;
+  text-align: left;
+}
+
+.gift-button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28.18px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.gift-certificate {
+  max-width: 40%;
+}
+
+.gift-certificate-image {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  .gift-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .gift-content {
+    margin-bottom: 40px;
+  }
+
+  .gift-certificate {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .gift {
+    padding: 40px 0;
+  }
+
+  .gift-label {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .gift-title-main,
+  .gift-title-accent {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .gift-description {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

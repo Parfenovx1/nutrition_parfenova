@@ -17,7 +17,7 @@
   bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 215px;
+  font-size: clamp(40px, 11vw, 215px);
   color: white;
   letter-spacing: -0.06em;
   white-space: nowrap;
@@ -26,7 +26,7 @@
 
 .special-letter {
   font-family: "Cormorant", serif;
-  font-size: 236px;
+  font-size: clamp(44px, 12vw, 236px);
   font-style: italic;
   font-weight: 100;
   text-align: center;

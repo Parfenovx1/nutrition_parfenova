@@ -24,7 +24,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
 }
 
 .services-text {
@@ -33,97 +32,109 @@
 }
 
 .services-label {
-  font-family: 'Cormorant', serif;
+  position: absolute;
+  top: 60px;
+  left: -130px;
+  font-family: "Cormorant", serif;
   font-size: 24px;
   font-style: italic;
   font-weight: 400;
-  color: #E5E4DC;
+  color: #e5e4dc;
   text-align: left;
   margin-bottom: 20px;
 }
 
 .services-header {
+  position: absolute;
   margin: 0 0 60px;
   max-width: 800px;
+  text-align: left;
+  text-transform: uppercase;
+  bottom: 100px;
+  left: -130px;
 }
 
 .services-title-italic {
-  font-family: 'Cormorant', serif;
+  font-family: "Cormorant", serif;
   font-size: 45px;
   font-style: italic;
   font-weight: 500;
   line-height: 54px;
-  color: #E5E4DC;
+  color: #e5e4dc;
   display: block;
   margin-bottom: 10px;
 }
 
 .services-title-regular {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 40px;
   font-weight: 500;
   line-height: 48px;
-  color: #E5E4DC;
+  color: #e5e4dc;
   display: block;
 }
 
 .services-cards {
-  position: relative;
-  right: auto;
-  top: auto;
+  position: absolute;
+  right: 0px;
+  top: 100px;
   transform: none;
   width: 400px;
   flex-shrink: 0;
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .service-card {
   background: rgba(229, 228, 220, 0.95);
-  padding: 40px;
+  padding: 25px;
   width: 100%;
-  min-height: 300px;
   display: flex;
+  text-align: left;
   flex-direction: column;
-  border-radius: 4px;
 }
 
 .card-number {
-  font-family: 'Raleway', sans-serif;
-  font-size: 14px;
-  color: #052D23;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  color: #052d23;
   text-align: right;
   margin-bottom: 24px;
+  font-weight: 600;
 }
 
 .card-title {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 24px;
   font-weight: 500;
-  color: #052D23;
+  color: #052d23;
   margin-bottom: 16px;
 }
 
 .card-subtitle {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 16px;
-  color: #052D23;
+  color: #052d23;
   margin-bottom: 8px;
 }
 
 .card-description {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 14px;
   line-height: 1.5;
-  color: #052D23;
+  color: #052d23;
   margin-bottom: auto;
 }
 
 .learn-more-btn {
-  background: #052D23;
+  background: #052d23;
   border: none;
   padding: 16px 24px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 16px;
-  color: #E5E4DC;
+  color: #e5e4dc;
   cursor: pointer;
   width: 100%;
   margin-top: 24px;
@@ -188,4 +199,4 @@
   .services-label {
     font-size: 20px;
   }
-} 
+}
